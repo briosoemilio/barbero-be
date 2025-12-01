@@ -19,4 +19,4 @@ app.get("/hello", (_, res) => {
   res.send("Hello barbero app");
 });
 
-exports.api = onRequest(app);
+exports.api = onRequest({region: "asia-southeast1"}, app);
